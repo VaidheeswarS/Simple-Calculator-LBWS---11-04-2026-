@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Calculator</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style>
+
+            body{
+                height: 648px;
+                background-color: palegreen;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            div{
+                background-color: white;
+                padding: 10px;
+            }
+
+            table{
+                padding: 10px;
+                border-spacing: 10px;
+            }
+
+            button{
+                padding: 10px;
+                height: 35px;
+                width: 45px;
+                font-weight: bold;
+                text-align: center;
+                cursor: pointer;
+
+            }
+
+            input{
+                padding: 15px;
+                outline: none;
+                background-color: paleturquoise;
+
+            }
+
+            #display{
+                position: relative;
+                width: 190px;
+                font-size: medium;
+            }
+
+            table{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #equal{
+                background-color: rgb(247, 171, 29);
+                color: white;
+                border: 1px solid rgb(247, 171, 29);
+            }
+            #equal:hover{
+                background-color: rgb(255, 166, 0);
+
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h2>Calculator</h2>
+        <div>
+            <table >
+                <tr>
+                    <td colspan="4"><input type="text" id="display" placeholder="0"  readonly></td>
+                </tr>
+                <tr>
+                    <td><button id="clear">C</button></td>
+                    <td><button id="cancel"><i class="fa-duotone fa-solid fa-delete-left"></i></button></td>
+                    <td><button id="dot">.</button></td>
+                    <td><button id="divide">/</button></td>
+                </tr>
+                <tr>
+                    <td><button id="7">7</button></td>
+                    <td><button id="8">8</button></td>
+                    <td><button id="9">9</button></td>
+                    <td><button id="sub">-</button></td>
+                </tr>
+                <tr>
+                    <td><button id="4">4</button></td>
+                    <td><button id="5">5</button></td>
+                    <td><button id="6">6</button></td>
+                    <td><button id="add">+</button></td>
+                </tr>
+                <tr>
+                    <td><button id="1">1</button></td>
+                    <td><button id="2">2</button></td>
+                    <td><button id="3">3</button></td>
+                    <td><button id="multiply">*</button></td>
+                </tr>
+                    <tr>
+                    <td><button id="open">(</button></td>
+                    <td><button id="0">0</button></td>
+                    <td><button id="close">)</button></td>
+                    <td><button id="equal">=</button></td>
+                </tr>
+
+            </table>
+        </div>
+
+        <script src="cal.js">
+
+        </script>
+    </body>
+    
+</html>
